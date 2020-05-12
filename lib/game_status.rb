@@ -26,7 +26,6 @@ def won?(board)
       end
     end
     return win_combo
-  end
 end
 
 def draw?(board)
