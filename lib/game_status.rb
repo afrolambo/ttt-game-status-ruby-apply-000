@@ -19,17 +19,17 @@ WIN_COMBINATIONS = [
 def won?(board)
   win_combo = []
   WIN_COMBINATIONS.each do |w_combo|
-    if board[w_combo[0]] == "X" && board[w_combo[1]] == "X" && board[w_combo[2]] == "X" 
-      true 
+    if board[w_combo[0]] == "X" && board[w_combo[1]] == "X" && board[w_combo[2]] == "X"
+      true
       w_combo.each {|i| [i].to_ary}
         win_combo.push("#{i}")
       end
     end
     return win_combo 
   end
-end 
-    
-    
+end
+
+
 end
 
 def draw?(board)
