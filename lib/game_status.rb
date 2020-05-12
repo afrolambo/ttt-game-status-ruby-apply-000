@@ -23,8 +23,8 @@ def won?(board)
     if board[w_c[0]] == "X" && board[w_c[1]] == "X" && board[w_c[2]] == "X"
       w_c.each do |i|
         win_combo = []
-      win_combo.push(i) 
-    end 
+      win_combo.push(i)
+    end
   end
 end
 
