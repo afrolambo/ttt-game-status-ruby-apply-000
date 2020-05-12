@@ -24,8 +24,10 @@ def won?(board)
       w_c.each do |i|
         win_combo = []
       win_combo.push(i)
+      true
     end
   end
+  puts "#{win_combo} wins"
 end
 end
 
