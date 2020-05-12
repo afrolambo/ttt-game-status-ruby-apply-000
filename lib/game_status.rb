@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   if draw? || board = [" "," "," "," "," "," "," "," "," "]
     false
-else 
+else
   WIN_COMBINATIONS.each do |w_c|
     def w_c(board = "X")
     # load the value of the board at win_index_1
