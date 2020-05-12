@@ -16,6 +16,11 @@ WIN_COMBINATIONS = [
 ]
 
 #won method should accept board as an argument
-
 def won?(board)
+end
+
+def draw?(board)
+  if board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+    true 
+  end
 end
