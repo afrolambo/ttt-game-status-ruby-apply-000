@@ -25,7 +25,7 @@ def won?(board)
         win_combo.push("#{i}")
       end
     end
-    return win_combo 
+    return win_combo
   end
 end
 end
