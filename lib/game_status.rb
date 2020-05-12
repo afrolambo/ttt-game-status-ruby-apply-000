@@ -30,4 +30,5 @@ def won?(board)
           end
       puts "#{win} Wins!"
     end
+  end
 end
