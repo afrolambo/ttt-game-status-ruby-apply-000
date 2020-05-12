@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 #won method should accept board as an argument
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combination|
+  WIN_COMBINATIONS.any do |win_combination|
     win = []
       unless board[win_combination] == ["X","X","X"] || board[win_combination] == ["O","O","O"]
         false
