@@ -4,3 +4,19 @@ def position_taken?(board, index)
 end
 
 # Define your WIN_COMBINATIONS constant
+WIN_COMBINATIONS = [
+  [0,1,2], # Top row
+  [3,4,5],  # Middle row
+  [6,7,8], # bottom_row
+  [0,3,6], # left_column
+  [1,4,7], # center_column
+  [2,5,8], # right_column
+  [0,4,8], # left_diagonal
+  [6,4,2] # right_diagonal
+]
+
+#won method should accept board as an argument
+
+def won?(board)
+  
+end
