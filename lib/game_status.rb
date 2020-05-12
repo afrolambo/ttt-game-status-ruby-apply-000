@@ -21,11 +21,11 @@ def won?(board)
     win_in_1 = win_combo[0]
     win_in_2 = win_combo[1]
     win_in_3 = win_combo[2]
-    
+
     position_1 = board[win_in_1]
     position_2 = board[win_in_2]
     position_3 = board[win_in_3]
-   
+
     if position_1 == position_2 && position_2 == position_3 && position_taken?(board, win_in_1)
       return win_combo
     end
