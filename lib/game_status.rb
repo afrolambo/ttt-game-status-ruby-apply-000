@@ -22,10 +22,11 @@ def won?(board)
     win = []
       unless board[win_combination] == ["X","X","X"] || board[win_combination] == ["O","O","O"]
         false
-      else win_combination.each do |position|
-            win.push("#{position}")
+      else win_combination.each do |index|
+            win.push("#{index}")
     end
   end
 end
 puts "#{win} Wins!"
+puts win.to_i
 end
