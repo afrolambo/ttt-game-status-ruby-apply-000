@@ -19,6 +19,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
+    board.empy? == [" "," "," "," "," "," "," "," "," "]
     win = []
     if win_combination == ["X","X","X"] || win_combination == ["O","O","O"]
       win_combination.each do |position|
