@@ -28,6 +28,6 @@ def won?(board)
   end
 end
 end
-puts "#{win} Wins!"
 puts win.to_i
+puts "#{win} Wins!"
 end
