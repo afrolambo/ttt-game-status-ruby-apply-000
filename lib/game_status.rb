@@ -18,16 +18,5 @@ WIN_COMBINATIONS = [
 #won method should accept board as an argument
 
 def won?(board)
-  if WIN_COMBINATIONS.any? do |win_combination|
-    win = []
-      unless board[win_combination] == ["X","X","X"] || board[win_combination] == ["O","O","O"]
-        false
-      else win_combination.each do |index|
-            win.push("#{index}")
-    end
-  end
 end
-end
-return win.to_i
-puts "#{win} Wins!"
-end
+  
