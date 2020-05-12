@@ -20,9 +20,9 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     win = []
-      if board[win_combination] == ["X","X","X"] || board[win_combination] == ["O","O","O"]
-        true
-          win_combination.each do |position|
+      unless board[win_combination] == ["X","X","X"] || board[win_combination] == ["O","O","O"]
+        false
+      else win_combination.each do |position|
             win.push("#{position}")
     end
   end
