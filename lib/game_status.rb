@@ -25,6 +25,7 @@ def won?(board)
         win.push ("#{position}")
       end
       puts "#{win} Wins!"
+    end
 end
 
 
