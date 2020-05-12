@@ -17,21 +17,18 @@ WIN_COMBINATIONS = [
 
 #won method should accept board as an argument
 def won?(board)
-  if draw? || board = [" "," "," "," "," "," "," "," "," "]
-    false
-else
-  WIN_COMBINATIONS.each do |w_c|
-    def w_c(board = "X")
-    # load the value of the board at win_index_1
-    if board[w_c[0]] == "X" && board[w_c[1]] == "X" && board[w_c[2]] == "X"
-      w_c.each do |i|
-        win_combo = []
-      win_combo.push(i)
-      true
-    end
+  WIN_COMBINATIONS.each do |win_combo|
+    win_in_1 = win_combo[0]
+    win_in_2 = win_combo[1]
+    win_in_3 = win_combo[2]
+    
+    position_1 = board[win_in_1]
+    position_2 = board[win_in_2]
+    position_3 = board[win_in_3]
+   
+    if position_1 == position_2 && position_2 == position_3 && position_taken?(board, win_in_1)
+      return win_combo
     end
   end
-  puts "#{win_combo} wins"
-  end
-end
+  return false
 end
