@@ -17,6 +17,7 @@ WIN_COMBINATIONS = [
 
 #won method should accept board as an argument
 def won?(board)
+  if draw? || board = [" "," "," "," "," "," "," "," "," "]
   WIN_COMBINATIONS.each do |w_c|
     def w_c(board = "X")
     # load the value of the board at win_index_1
