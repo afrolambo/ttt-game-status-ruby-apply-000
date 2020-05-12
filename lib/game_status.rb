@@ -24,7 +24,7 @@ def won?(board)
       win_combination.each do |position|
         win.push ("#{position}")
       end
-      return "#{win} Wins!"
+      puts "#{win} Wins!"
 end
 
 
