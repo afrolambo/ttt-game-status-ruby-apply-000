@@ -24,7 +24,7 @@ def won?(board)
         true
           win_combination.each do |position|
             win.push ("#{position}")
-      else
+      elsif win_combination !== ["X","X","X"] || win_combination !== ["O","O","O"] || win_combination == [" "," "," "]
         false
           end
       puts "#{win} Wins!"
