@@ -29,6 +29,7 @@ else
       win_combo.push(i)
       true
     end
+    end
   end
   puts "#{win_combo} wins"
 end
