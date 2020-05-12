@@ -37,5 +37,4 @@ end
 def draw?(board)
   if board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
     true
-  end
 end
