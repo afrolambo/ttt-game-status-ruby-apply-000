@@ -23,7 +23,7 @@ def won?(board)
       if win_combination == ["X","X","X"] || win_combination == ["O","O","O"]
           win_combination.each do |position|
             win.push ("#{position}")
-      elsif board.empty? || draw_board?
+      else board.empty? || draw_board?
         false
           end
       puts "#{win} Wins!"
