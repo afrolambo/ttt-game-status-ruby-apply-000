@@ -28,11 +28,6 @@ def won?(board)
     return win_combo
   end
 end
-end
-end
-
-
-end
 
 def draw?(board)
   if board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
