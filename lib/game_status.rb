@@ -32,6 +32,6 @@ else
     end
   end
   puts "#{win_combo} wins"
-end
+  end
 end
 end
